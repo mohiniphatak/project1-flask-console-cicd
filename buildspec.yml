@@ -24,6 +24,7 @@ phases:
       - docker tag eks-cicd:latest 058264531732.dkr.ecr.us-east-1.amazonaws.com/eks-cicd:latest
       - docker push 058264531732.dkr.ecr.us-east-1.amazonaws.com/eks-cicd:latest
       # - docker push "$DOCKER_REGISTRY_URL/$DOCKER_REGISTRY_USERNAME/simple-python-flask-app:latest"
+      # test trigger
   post_build:
     commands:
       - echo "Build completed successfully!"
